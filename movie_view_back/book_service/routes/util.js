@@ -24,7 +24,7 @@ router.post('/buildMovie',function(req,res,next){
         }else{
             res.json({status:1,message:"电影创建成功！"})
         }
-    })
+    });
 });
 
 
