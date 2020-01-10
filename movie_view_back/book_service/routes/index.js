@@ -54,7 +54,7 @@ router.get("showArticle",function(req,res,next){
 });
 // 显示文章内容
 router.post("/articleDetail",function(req,res,next){
-// 获取文章内容需要article_id参数作为/showArticle的辅助路由
+  // 获取文章内容需要article_id参数作为/showArticle的辅助路由
   if(!req.body.article_id){
     res.json({status: 1,message: "文章id出错"})
   }
