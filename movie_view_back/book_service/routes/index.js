@@ -46,7 +46,7 @@ router.get('/showRanking',function(req,res,next){
   })
 });
 // 显示文章列表
-router.get("showArticle",function(req,res,next){
+router.get("/showArticle",function(req,res,next){
   // 因为获取文章列表是公开的，无须验证用户的登录状态，所以选择get请求方式
   article.findAll(function(err,getArticles){
     res.json({status: 0, message: "获取文章列表",data: getArticles})
